@@ -1,0 +1,16 @@
+MERN
+
+R = React FrontEnd UI (snapdeal)
+
+
+RWD = Responsive Web Design ()
+Bootrap --> Twitter.com
+Bootrap 1,2,3,4 -> 5
+
+React + Bootstrap 5
+
+Header 1366 x 94
+Main   1366 x 7188
+Footer 1366 x 1588
+
+

@@ -1,0 +1,147 @@
+.tbdr{
+  border:1px dashed #000;
+}
+a:focus {
+  box-shadow: none !important;
+}
+body{
+  font-family: 'RobotoRegular', sans-serif;
+  font-size: 0.8em;
+}
+header{
+  height: 94px;
+  background-color: #e40046;
+  border: 1px dashed red;
+}
+.a_hform{
+  height: 37px;
+  width: 95%;
+  border-radius: 1px;
+}
+.a_hbot_nav a{
+  display: block ;
+  padding:20px 40px 20px 40px;
+}
+.a_hbot_nav > li:first-child{
+  border-color: rgba(0,0,0,0.1) !important;
+}
+.a_hbot_nav > li{
+  position: relative;
+}
+.a_hbot_nav > li:nth-child(2):hover > a{
+  background: #333;
+  transition: none !important;
+}
+.fauserbox{
+  position: absolute;
+  bottom:10px;
+  right:0px;
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 40px;
+}
+.a_hbot_nav > li:hover ul{
+  display: block;
+}
+.a_hbot_nav > li ul{
+  position: absolute;
+  top:62px;
+  right:0px;
+  width: 215px;
+  height: 275px;
+  background: #333;
+  z-index: 1000;
+  border-top-left-radius:4px ;
+  display: none;
+}
+.a_bl{
+  margin-top:11px;
+  text-decoration: none;
+}
+.a_bl:hover{
+  background: #333;
+}
+.a_header_top{
+  height: 30px;
+  background: #c7003d;
+}
+.a_header_top > .container{
+  border:1px dashed #000;
+  height: 100%;
+  max-width: 1245px !important;
+}
+.a_header_bottom{
+  height: 65px;
+}
+.a_header_bottom > .container{
+  border:1px dashed #000;
+  height: 100%;
+  max-width: 1245px !important;
+}
+.a_main{
+  background-color: #f7f7f7;
+  border:1px dashed green;
+}
+.a_main1{
+  border:1px dashed #000;
+  height: 6673px;
+  max-width: 1245px !important;
+}
+.a_main1_b1{
+  height: 816px;
+  border:1px dashed red;
+}
+.a_main1_b1 > div{
+  border:1px dashed #000;
+}
+.a_slider{
+  height: 345px;
+  border:1px dashed orange;
+}
+.a_trending_products{
+  height: 450px;
+  border:1px dashed red;
+}
+.carousel-indicators > button{
+  width: 160px !important;
+  height: 23px !important;
+  text-indent: 0px !important;
+}
+.carousel-indicators > button.active{
+  padding-bottom: 10px !important;
+  border-bottom: 2px solid #333333;
+}
+.carousel-item{
+  height: 299px !important;
+}
+.a_main2{
+  border:1px dashed red;
+  height: 455px;
+}
+footer{
+  background-color: #f7f7f7;
+  border: 1px dashed blue;
+}
+.a_foot1{
+  border:1px dashed red;
+  height: 550px;
+  max-width: 1245px !important;
+}
+.a_foot2{
+  border:1px dashed green;
+  height: 997px;
+  max-width: 1245px !important;
+}
+.a_foot3{
+  border:1px dashed orange;
+  height: 46px;
+  max-width: 1245px !important;
+}
+.swiperbox{
+  background-color: red;
+  transform-origin: 50% 200%;
+}
