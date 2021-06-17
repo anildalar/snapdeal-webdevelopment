@@ -21,10 +21,30 @@ header{
 }
 .inputBox{
   width: 555px;
-  height: 367px;
   z-index: 1000;
   box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
   display: none;
+}
+.cartModel .modal-body li a{
+  
+  color:#333;
+  text-decoration: none;
+}
+.cartModel .modal-body li{
+  display: block;
+  padding: 10px;/*Remember the TRBL formular*/
+  width: 260px;
+  float: left;
+}
+.inputBox h6{
+  color:#999;
+}
+.inputBox ul a{
+  padding-left:24px;
+  color:#666 !important;
+}
+.inputBox ul a:hover{ 
+    background: #f6f6f6 !important;
 }
 .a_hform input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #8f8f8f;
