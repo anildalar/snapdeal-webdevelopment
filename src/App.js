@@ -1,6 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMobileAlt, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faMobileAlt, faShoppingCart, faUser,faSearch } from '@fortawesome/free-solid-svg-icons'
 
 /**
 * @author
@@ -72,7 +72,20 @@ class App extends Component {
                   </a>
                 </div>
                 <div className="col-7">
-                  <form className="mt-3 a_hform bg-white">B</form>
+                  <form className="mt-3 a_hform">
+                    <div className="row m-0">
+                      <div className="col-md-10 p-0">
+                        <input placeholder="Search products &amp; brands" className="ps-5 h-100 rounded-0 form-control" />
+                        <div className="bg-white inputBox position-absolute "></div>
+                      </div>
+                      <div className="col-md-2 p-0">
+                        <div class="d-grid">
+                          <button class="btn btn-dark rounded-0" type="submit"><FontAwesomeIcon icon={faSearch} /> Search</button>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </form>
                 </div>
                 <div className="col-3">
                   <ul className="nav a_hbot_nav float-end">
