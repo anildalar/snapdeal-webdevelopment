@@ -76,6 +76,8 @@ header{
 }
 .a_header_bottom{
   height: 65px;
+  z-index: 1000;
+  background: #e40046;
 }
 .a_header_bottom > .container{
   border:1px dashed #000;
