@@ -14,3 +14,22 @@ Main   1366 x 7188
 Footer 1366 x 1588
 
 
+We will target the anchors
+
+copy screenshot
+paste
+
+So we are going to create a modal
+Now see our model is fading from top to 
+bottom
+see
+
+We want to remove this fading
+
+So just remove the fade class
+
+Thats for this video
+Thank you for watching
+
+
+

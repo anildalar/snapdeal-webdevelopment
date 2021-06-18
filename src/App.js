@@ -44,7 +44,7 @@ class App extends Component {
     return (
       <div>
         <div className="modal cartModel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div className="modal-dialog modal-xl" style={{ 'top':76+'px' }}>
+          <div className="modal-dialog modal-xl" style={{ 'top':53+'px' }}>
             <div className="modal-content">
               <div className="text-center position-relative">
                 <h5 className="modal-title p-3 mt-3 text-secondary" id="exampleModalLabel">Shopping Cart is empty!</h5>
