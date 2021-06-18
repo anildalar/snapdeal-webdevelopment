@@ -1,6 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMobileAlt, faShoppingCart, faUser, faSearch, faChartLine,faShieldAlt } from '@fortawesome/free-solid-svg-icons'
+import { faMobileAlt, faShoppingCart, faUser, faSearch, faChartLine, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
 
 /**
 * @author
@@ -44,12 +44,12 @@ class App extends Component {
     return (
       <div>
         <div className="modal cartModel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div className="modal-dialog modal-xl" style={{ 'top':53+'px' }}>
+          <div className="modal-dialog modal-xl" style={{ 'top': 53 + 'px' }}>
             <div className="modal-content">
               <div className="text-center position-relative">
                 <h5 className="modal-title p-3 mt-3 text-secondary" id="exampleModalLabel">Shopping Cart is empty!</h5>
                 <h5 className="modal-title p-3 text-secondary" id="exampleModalLabel22">BROWSE CATEGORIES</h5>
-                <button type="button" className="btn-close position-absolute" style={{'right':30+'px','top':30+'px'}} data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" className="btn-close position-absolute" style={{ 'right': 30 + 'px', 'top': 30 + 'px' }} data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div className="modal-body">
                 <ul class="list-unstyled">
@@ -81,12 +81,12 @@ class App extends Component {
               </div>
               <div className="modal-footer d-flex justify-content-center">
                 <button type="button" className="btn btn-danger btn-lg ps-5 pe-5">Start Shopping Now</button>
-                
+
               </div>
               <p className="text-center">
-                  <span className="me-3"><FontAwesomeIcon icon={faShieldAlt}  /> Safe and Secure Payments </span>
-                  <span><FontAwesomeIcon icon={faShieldAlt}  /> 100% Payment Protection, Easy Returns Policy</span>
-                </p>
+                <span className="me-3"><FontAwesomeIcon icon={faShieldAlt} /> Safe and Secure Payments </span>
+                <span><FontAwesomeIcon icon={faShieldAlt} /> 100% Payment Protection, Easy Returns Policy</span>
+              </p>
             </div>
           </div>
         </div>
@@ -195,7 +195,72 @@ class App extends Component {
         <div className="a_main pb-5">
           <div className="container p-0 a_main1 mt-3">
             <div className="row m-0 a_main1_b1 ">
-              <div className="col-2 ">A</div>
+              <div className="bg-white col-2 pe-0 pt-3 pb-3 position-relative">
+                <h6 className="fs-6">TOP CATEGORIES</h6>
+                <ul className=" nav flex-column asidenav">
+                  <li className="nav-item">
+                    <a className="nav-link" href="#"><img className="me-1" width="25" src="https://n3.sdlcdn.com/imgs/d/h/3/Discount_Right_icon-f5105.png" />All Offers</a>
+                    <div className="position-absolute top-0 asidenav_righbox">
+                      <div className="row m-0 h-100">
+                        <div className="col-3 tbdr">
+                          <ul className="nav flex-column">
+                            <li className="nav-item">
+                              <a className="nav-link active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li className="nav-item">
+                              <a className="nav-link" href="#">Link</a>
+                            </li>
+                            <li className="nav-item">
+                              <a className="nav-link" href="#">Link</a>
+                            </li>
+                            <li className="nav-item">
+                              <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="col-3 tbdr">B</div>
+                        <div className="col-3 tbdr">C</div>
+                        <div className="col-3 tbdr">Banner</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#"><img className="me-1" width="25" src="https://n3.sdlcdn.com/imgs/d/h/3/Discount_Right_icon-f5105.png" />Modile &amp; Tables</a>
+                    <div className="position-absolute top-0 asidenav_righbox">B</div>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#"><img className="me-1" width="25" src="https://n3.sdlcdn.com/imgs/d/h/3/Discount_Right_icon-f5105.png" />Electronics</a>
+                    <div className="position-absolute top-0 asidenav_righbox">C</div>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#"><img className="me-1" width="25" src="https://n3.sdlcdn.com/imgs/d/h/3/Discount_Right_icon-f5105.png" />Computer &amp; Gaming</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#"><img className="me-1" width="25" src="https://n3.sdlcdn.com/imgs/d/h/3/Discount_Right_icon-f5105.png" />Home &amp; Kitchen</a>
+                  </li>
+                </ul>
+                <h6 className="fs-6">MORE CATEGORIES</h6>
+                <ul className=" nav flex-column asidenav asidenav2">
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Men's Fasion</a>
+                    <div className="position-absolute top-0 asidenav_righbox">A</div>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Men's Fasion</a>
+                    <div className="position-absolute top-0 asidenav_righbox">B</div>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Men's Fasion</a>
+                    <div className="position-absolute top-0 asidenav_righbox">C</div>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Men's Fasion</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Men's Fasion</a>
+                  </li>
+                </ul>
+              </div>
               <div className="col-10">
                 <div className="a_slider row">
                   <div className="col-10">
