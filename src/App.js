@@ -1,6 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMobileAlt, faShoppingCart, faUser, faSearch, faChartLine, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
+import { faMobileAlt, faShoppingCart, faUser, faSearch, faChartLine, faShieldAlt,faBars } from '@fortawesome/free-solid-svg-icons'
 
 /**
 * @author
@@ -19,7 +19,9 @@ import PropTypes from 'prop-types'
 class App extends Component {
   //1. Properties
   state = {
-    x: ''
+    x: '',
+    y:'',
+    z:'d-none'
   }
   //2. Constructor
 
@@ -34,6 +36,16 @@ class App extends Component {
       //Remove
       this.setState({ x: '' });
     }
+    if(window.scrollY >= 787){
+      this.setState({ y: 'position-fixed aside d-none' });
+      this.setState({ z: 'd-block' });
+    }else{
+      this.setState({ z: 'd-none' });
+
+    }
+  }
+  asideNavShow= ()=>{
+    this.setState({ y: 'position-fixed aside d-block' });
   }
   componentDidMount() {
     //THis method method will be called when page/component is loaded
@@ -114,9 +126,10 @@ class App extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-2">
-                  <a href="#" className="btn mt-3 p-0 ">
+                  <a href="#" className="btn mt-2 p-0 float-start">
                     <img src="./logo.png" />
                   </a>
+                  <a href="#" onMouseMove={this.asideNavShow} className={'mt-3 btn btn-sm btn-light float-end '+this.state.z}> <FontAwesomeIcon icon={faBars} /> </a>
                 </div>
                 <div className="col-7">
                   <form className="mt-3 a_hform">
@@ -195,8 +208,8 @@ class App extends Component {
         <div className="a_main pb-5">
           <div className="container p-0 a_main1 mt-3">
             <div className="row m-0 a_main1_b1 ">
-              <div className="bg-white col-2 pe-0 pt-3 pb-3 position-relative">
-                <h6 className="fs-6">TOP CATEGORIES</h6>
+              <div className={'bg-white col-2 pe-0 pt-3 pb-3 '+this.state.y}>
+                <h6 className="fs-6 fw-light">TOP CATEGORIES</h6>
                 <ul className=" nav flex-column asidenav">
                   <li className="nav-item">
                     <a className="nav-link" href="#"><img className="me-1" width="25" src="https://n3.sdlcdn.com/imgs/d/h/3/Discount_Right_icon-f5105.png" />All Offers</a>
