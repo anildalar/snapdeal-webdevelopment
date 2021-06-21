@@ -216,6 +216,13 @@ footer{
   height: 550px;
   max-width: 1245px !important;
 }
+.a_foot2 a:hover{
+  text-decoration: underline;
+}
+.a_foot2 a{
+  color:#333;
+  text-decoration: none;
+}
 .a_foot2{
   border:1px dashed green;
   height: 997px;
@@ -229,4 +236,33 @@ footer{
 .swiperbox{
   background-color: red;
   transform-origin: 50% 200%;
+}
+
+/* Heart Animation */
+.a_heart{
+  animation-name: heartbeat;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes heartbeat{
+  0%{
+    transform:scale(1,1);
+  }
+  50%{
+    transform:scale(1.5,1.5);
+  }
+  60%{
+    transform:scale(1.2,1.2);
+  }
+  70%{
+    transform:scale(1.5,1.5);
+  }
+  80%{
+    transform:scale(1.2,1.2);
+  }
+  100%{
+    transform:scale(1,1);
+  }
 }
