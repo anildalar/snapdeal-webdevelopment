@@ -207,14 +207,22 @@ header{
   border:1px dashed red;
   height: 455px;
 }
+footer a{
+  color: #777 !important;
+}
 footer{
   background-color: #f7f7f7;
-  border: 1px dashed blue;
+  color: #777 !important;
+}
+.a_fspritebox{
+  width: 53px;
+  height: 53px;
+  border:1px dashed orange;
+  background-image: url('https://i1.sdlcdn.com/img/newHomePageIcons@1x.png');
+  background-position: -5px -63px;
 }
 .a_foot1{
-  border:1px dashed red;
   height: 550px;
-  max-width: 1245px !important;
 }
 .a_foot2 a:hover{
   text-decoration: underline;
@@ -241,28 +249,27 @@ footer{
 /* Heart Animation */
 .a_heart{
   animation-name: heartbeat;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 @keyframes heartbeat{
   0%{
-    transform:scale(1,1);
+    transform:scale(1)
+  }
+  5%{
+      transform:scale(1.2)
+  }
+  10%{
+      transform:scale(1.1)
+  }
+  15%{
+      transform:scale(1.25)
   }
   50%{
-    transform:scale(1.5,1.5);
-  }
-  60%{
-    transform:scale(1.2,1.2);
-  }
-  70%{
-    transform:scale(1.5,1.5);
-  }
-  80%{
-    transform:scale(1.2,1.2);
+      transform:scale(1)
   }
   100%{
-    transform:scale(1,1);
+      transform:scale(1)
   }
+
 }
