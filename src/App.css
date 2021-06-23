@@ -221,6 +221,27 @@ footer{
   background-image: url('https://i1.sdlcdn.com/img/newHomePageIcons@1x.png');
   background-position: -5px -63px;
 }
+.footer_socialicon a{
+  width: 30px;
+  height: 30px;
+  background-image: url('https://i1.sdlcdn.com/img/newHomePageIcons@1x.png');
+  background-position: 5px -35px;
+}
+.footer_socialicon li{
+  margin-right: 15px;
+}
+.footer_socialicon li:nth-child(2) a{
+  background-position: -25px -35px;
+}
+.footer_socialicon li:nth-child(3) a{
+  background-position: -87px -35px;
+}
+.footer_socialicon li:nth-child(4) a{
+  background-position: -116px -35px;
+}
+.footer_socialicon li:last-child a{
+  background-position: -145px -35px;
+}
 .a_foot1{
   height: 550px;
 }
