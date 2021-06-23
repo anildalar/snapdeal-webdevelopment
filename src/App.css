@@ -224,6 +224,17 @@ footer{
 .a_foot1{
   height: 550px;
 }
+.a_foot1_cont2{
+  max-width: 1230px;
+}
+.a_foot1_cont2 a{
+  font-size: 12px;
+  padding: 0px;
+  color:#a5a5a5;
+}
+.a_foot1_cont2 a:hover{
+  text-decoration: underline;
+}
 .a_foot2 a:hover{
   text-decoration: underline;
 }
