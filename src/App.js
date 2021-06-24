@@ -52,7 +52,11 @@ class App extends Component {
     //object.method();
     window.addEventListener('scroll', this.handleScroll);
   }
+  a_sliderrbox = ()=>{
+    alert('ok');
+  }
   render() {
+    
     return (
       <div>
         <div className="modal cartModel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -276,7 +280,7 @@ class App extends Component {
               </div>
               <div className="col-10">
                 <div className="a_slider row">
-                  <div className="col-10">
+                  <div className="col-9">
                     <div id="carouselExampleIndicators" className="carousel slide h-100" data-bs-ride="carousel">
                       <div className="bg-white carousel-indicators m-0 justify-content-center">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active m-0" aria-current="true" aria-label="Slide 1">Boy's Tees</button>
@@ -312,8 +316,22 @@ class App extends Component {
                       </button>
                     </div>
                   </div>
-                  <div className="col-2">
-
+                  <div className="col-3 position-relative">
+                    <div className="a_sliderrbox position-absolute top-0 start-0 pincodeBox bg-danger">
+                      <div></div>
+                      <div className="pt-2">
+                        <p className="float-start">New User? <a href="#">Register</a></p>
+                         <button className="btn btn-secondary float-end" onClick={this.a_sliderrbox}>NEXT2</button> 
+                      </div>
+                    </div>
+                    <div className={'a_sliderrbox position-absolute top-0 start-0 loginBox bg-warning '} style={{transform: 'rotateZ('+0+'deg)'}}>
+                      <div></div>
+                      <div className="pt-2">
+                        <p className="float-start">New User? <a href="#">Register</a></p>
+                         <button className="btn btn-secondary float-end" onClick={this.a_sliderrbox}>NEXT1</button> 
+                      </div>
+                      
+                    </div>
                   </div>
                 </div>
                 <div className="a_trending_products"></div>

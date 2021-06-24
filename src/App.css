@@ -9,6 +9,22 @@ body{
   font-family: 'RobotoRegular', sans-serif;
   font-size: 0.8em;
 }
+.a_sliderrbox{
+  width: 226px;
+  height: 328px;
+  transition: all linear 1s;
+  transform-origin: center 500px;
+}
+.a_sliderrbox > div{
+  height: 274px;
+  border:1px dashed red;
+}
+.pincodeBox{
+    z-index: 1000;
+}
+.loginBox{
+  z-index: 1000;
+}
 header{
   height: 94px;
   background-color: #e40046;
