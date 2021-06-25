@@ -52,11 +52,11 @@ class App extends Component {
     //object.method();
     window.addEventListener('scroll', this.handleScroll);
   }
-  a_sliderrbox = ()=>{
+  a_sliderrbox = () => {
     alert('ok');
   }
   render() {
-    
+
     return (
       <div>
         <div className="modal cartModel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -317,20 +317,33 @@ class App extends Component {
                     </div>
                   </div>
                   <div className="col-3 position-relative">
-                    <div className="a_sliderrbox position-absolute top-0 start-0 pincodeBox bg-danger">
-                      <div></div>
-                      <div className="pt-2">
-                        <p className="float-start">New User? <a href="#">Register</a></p>
-                         <button className="btn btn-secondary float-end" onClick={this.a_sliderrbox}>NEXT2</button> 
+                    <div className="a_sliderrbox position-absolute top-0 start-0 pincodeBox bg-white border rounded">
+                      <div className="text-center">
+                        <div className="a_pinimg a_pinimg2  mx-auto mt-2"></div>
+                      </div>
+                      <div className="p-2 text-center">
+                        <p className="text-center w-75 mx-auto">Login to your Snapdeal account</p>
+                        <button className="btn btn-sm btn-dark w-50 mb-3">LOG IN</button>
+                        <form>
+                         <button className="p-0 btn btn-sm btn-link btn-sm w-50"> New user?Register</button>
+                          <button className="btn btn-sm btn-secondary float-end" onClick={this.a_sliderrbox}>NEXT2</button>
+                        </form>
                       </div>
                     </div>
-                    <div className={'a_sliderrbox position-absolute top-0 start-0 loginBox bg-warning '} style={{transform: 'rotateZ('+0+'deg)'}}>
-                      <div></div>
-                      <div className="pt-2">
-                        <p className="float-start">New User? <a href="#">Register</a></p>
-                         <button className="btn btn-secondary float-end" onClick={this.a_sliderrbox}>NEXT1</button> 
+                    <div className={'a_sliderrbox position-absolute top-0 start-0 loginBox bg-white border rounded'} style={{ transform: 'rotateZ(' + 0 + 'deg)' }}>
+                      <div className="text-center">
+                        <div className="a_pinimg mx-auto mt-2"></div>
+                        <span>Your Delivery Pincode</span>
                       </div>
-                      
+                      <div className="p-2">
+                        <p className="text-center w-75 mx-auto">Enter your pincode to check availablity and fast delivery options</p>
+                        <form>
+                          <input placeholder="Enter pincode" className="form-control form-control-sm rounded-1 mb-2" />
+                          <button className="btn btn-dark btn-sm w-50">Submit</button>
+                          <button className="btn btn-sm btn-secondary float-end" onClick={this.a_sliderrbox}>NEXT1</button>
+                        </form>
+                      </div>
+
                     </div>
                   </div>
                 </div>
