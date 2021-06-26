@@ -21,7 +21,11 @@ class App extends Component {
   state = {
     x: '',
     y: '',
-    z: 'd-none'
+    z: 'd-none',
+    slideRbox:{
+      rot:0,
+      opact:1
+    }
   }
   //2. Constructor
 
@@ -52,8 +56,10 @@ class App extends Component {
     //object.method();
     window.addEventListener('scroll', this.handleScroll);
   }
-  a_sliderrbox = () => {
-    alert('ok');
+  a_sliderrbox = (e) => {
+    e.preventDefault();
+    //alert('ok');
+    this.setState({slideRbox:{rot:45,opact:0}});
   }
   render() {
 
@@ -280,8 +286,8 @@ class App extends Component {
               </div>
               <div className="col-10">
                 <div className="a_slider row">
-                  <div className="col-9">
-                    <div id="carouselExampleIndicators" className="carousel slide h-100" data-bs-ride="carousel">
+                  <div className="col-9 p-0">
+                    <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                       <div className="bg-white carousel-indicators m-0 justify-content-center">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active m-0" aria-current="true" aria-label="Slide 1">Boy's Tees</button>
                         <button className="m-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">Women's Tees</button>
@@ -316,8 +322,8 @@ class App extends Component {
                       </button>
                     </div>
                   </div>
-                  <div className="col-3 position-relative">
-                    <div className="a_sliderrbox position-absolute top-0 start-0 pincodeBox bg-white border rounded">
+                  <div className="col-3 p-0 position-relative">
+                    <div className="a_sliderrbox position-absolute top-0 end-0 pincodeBox bg-white border rounded" style={{ transform:'rotateZ('+this.state.slideRbox.rot+'deg)',opacity:this.state.slideRbox.opact }}>
                       <div className="text-center">
                         <div className="a_pinimg a_pinimg2  mx-auto mt-2"></div>
                       </div>
@@ -330,7 +336,7 @@ class App extends Component {
                         </form>
                       </div>
                     </div>
-                    <div className={'a_sliderrbox position-absolute top-0 start-0 loginBox bg-white border rounded'} style={{ transform: 'rotateZ(' + 0 + 'deg)' }}>
+                    <div className={'a_sliderrbox position-absolute top-0 end-0 loginBox bg-white border rounded d-none'} style={{ transform: 'rotateZ(' + 0 + 'deg)' }}>
                       <div className="text-center">
                         <div className="a_pinimg mx-auto mt-2"></div>
                         <span>Your Delivery Pincode</span>

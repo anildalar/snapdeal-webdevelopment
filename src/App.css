@@ -9,10 +9,13 @@ body{
   font-family: 'RobotoRegular', sans-serif;
   font-size: 0.8em;
 }
+#carouselExampleIndicators{
+  height: 96% !important;
+}
 .a_sliderrbox{
   width: 226px;
   height: 328px;
-  transition: all linear 1s;
+  transition: all linear 0.2s;
   transform-origin: center 500px;
 }
 .a_sliderrbox > div{
@@ -286,6 +289,18 @@ footer{
 .a_foot2 a{
   color:#333;
   text-decoration: none;
+}
+.a_foot2 li:not(:first-child) a{
+
+}
+.a_foot2 li:not(:first-child) a:hover{
+
+}
+.a_slider > .col-9{
+  width: 76% !important;
+}
+.a_slider > .col-3{
+  width: 24% !important;
 }
 .a_foot2{
   border:1px dashed green;
