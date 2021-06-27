@@ -15,8 +15,11 @@ body{
 .a_sliderrbox{
   width: 226px;
   height: 328px;
-  transition: all linear 0.2s;
+  transition: all linear 1s;
   transform-origin: center 500px;
+  opacity: 1;
+  visibility: visible;
+  transform: rotateZ(0deg);
 }
 .a_sliderrbox > div{
   height: 159px;

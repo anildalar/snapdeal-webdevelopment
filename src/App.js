@@ -15,7 +15,7 @@ import PropTypes from 'prop-types'
 * @class App
 **/
 //We have to create a class component
-
+let i=0;
 class App extends Component {
   //1. Properties
   state = {
@@ -57,15 +57,38 @@ class App extends Component {
     window.addEventListener('scroll', this.handleScroll);
   }
   a_sliderrbox = (e) => {
+    console.log('clicked');
     e.preventDefault();
-    //alert('ok');
-    this.setState({slideRbox:{rot:45,opact:0}});
+    console.log(i);
+    let curElem = e.currentTarget.closest('.a_sliderrbox');
+    curElem.style.zIndex='10000';
+    curElem.style.opacity=0;
+    curElem.style.visibilty='hidden';
+    curElem.style.transform='rotateZ(45deg)';
+    console.log(curElem);
+    
+    if(i%2 == 0){
+      console.log('prev');
+      curElem.previousElementSibling.style.zIndex = '10010';
+      curElem.style.opacity=1;
+      curElem.style.transform='rotateZ(0deg)';
+      i++;
+    }else{
+      console.log('next');
+      curElem.nextElementSibling.style.zIndex = '100010';
+      curElem.style.opacity=1;
+      curElem.style.transform='rotateZ(0deg)';
+      i--;
+    }
+    //this.setState({slideRbox:{rot:45,opact:0}});
+
+    //style={{ transform:'rotateZ('+this.state.slideRbox.rot+'deg)',opacity:this.state.slideRbox.opact }}
   }
   render() {
 
     return (
       <div>
-        <div className="modal cartModel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal cartModel" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog modal-xl" style={{ 'top': 53 + 'px' }}>
             <div className="modal-content">
               <div className="text-center position-relative">
@@ -237,7 +260,7 @@ class App extends Component {
                               <a className="nav-link" href="#">Link</a>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                              <a className="nav-link disabled" href="#">Disabled</a>
                             </li>
                           </ul>
                         </div>
@@ -323,7 +346,7 @@ class App extends Component {
                     </div>
                   </div>
                   <div className="col-3 p-0 position-relative">
-                    <div className="a_sliderrbox position-absolute top-0 end-0 pincodeBox bg-white border rounded" style={{ transform:'rotateZ('+this.state.slideRbox.rot+'deg)',opacity:this.state.slideRbox.opact }}>
+                    <div className="a_sliderrbox a position-absolute top-0 end-0 pincodeBox bg-white border rounded" >
                       <div className="text-center">
                         <div className="a_pinimg a_pinimg2  mx-auto mt-2"></div>
                       </div>
@@ -331,12 +354,12 @@ class App extends Component {
                         <p className="text-center w-75 mx-auto">Login to your Snapdeal account</p>
                         <button className="btn btn-sm btn-dark w-50 mb-3">LOG IN</button>
                         <form>
-                         <button className="p-0 btn btn-sm btn-link btn-sm w-50"> New user?Register</button>
+                          <button className="p-0 btn btn-sm btn-link btn-sm w-50"> New user?Register</button>
                           <button className="btn btn-sm btn-secondary float-end" onClick={this.a_sliderrbox}>NEXT2</button>
                         </form>
                       </div>
                     </div>
-                    <div className={'a_sliderrbox position-absolute top-0 end-0 loginBox bg-white border rounded d-none'} style={{ transform: 'rotateZ(' + 0 + 'deg)' }}>
+                    <div className={'a_sliderrbox b position-absolute top-0 end-0 loginBox bg-white border rounded'}>
                       <div className="text-center">
                         <div className="a_pinimg mx-auto mt-2"></div>
                         <span>Your Delivery Pincode</span>
@@ -345,7 +368,7 @@ class App extends Component {
                         <p className="text-center w-75 mx-auto">Enter your pincode to check availablity and fast delivery options</p>
                         <form>
                           <input placeholder="Enter pincode" className="form-control form-control-sm rounded-1 mb-2" />
-                          <button className="btn btn-dark btn-sm w-50">Submit</button>
+                          <button type="button" className="btn btn-dark btn-sm w-50">Submit</button>
                           <button className="btn btn-sm btn-secondary float-end" onClick={this.a_sliderrbox}>NEXT1</button>
                         </form>
                       </div>
@@ -508,7 +531,7 @@ class App extends Component {
           </div>
           <div className="container a_foot2 pt-4">
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
+              <ol className="breadcrumb mb-0">
                 <li className=""><a href="#">Mobile Accessories: </a></li>
                 <li className="ms-2 breadcrumb-item"><a href="#">Mobile Covers</a></li>
                 <li className="breadcrumb-item" aria-current="page"><a href="#">Leather Mobile Covers</a></li>
@@ -519,7 +542,7 @@ class App extends Component {
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
+              <ol className="breadcrumb mb-0">
                 <li className=""><a href="#">Mobile Accessories: </a></li>
                 <li className="ms-2 breadcrumb-item"><a href="#">Mobile Covers</a></li>
                 <li className="breadcrumb-item" aria-current="page"><a href="#">Leather Mobile Covers</a></li>
@@ -530,7 +553,7 @@ class App extends Component {
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
+              <ol className="breadcrumb mb-0">
                 <li className=""><a href="#">Mobile Accessories: </a></li>
                 <li className="ms-2 breadcrumb-item"><a href="#">Mobile Covers</a></li>
                 <li className="breadcrumb-item" aria-current="page"><a href="#">Leather Mobile Covers</a></li>
@@ -541,7 +564,7 @@ class App extends Component {
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
+              <ol className="breadcrumb mb-0">
                 <li className=""><a href="#">Mobile Accessories: </a></li>
                 <li className="ms-2 breadcrumb-item"><a href="#">Mobile Covers</a></li>
                 <li className="breadcrumb-item" aria-current="page"><a href="#">Leather Mobile Covers</a></li>
@@ -552,7 +575,7 @@ class App extends Component {
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
+              <ol className="breadcrumb mb-0">
                 <li className=""><a href="#">Mobile Accessories: </a></li>
                 <li className="ms-2 breadcrumb-item"><a href="#">Mobile Covers</a></li>
                 <li className="breadcrumb-item" aria-current="page"><a href="#">Leather Mobile Covers</a></li>
@@ -563,7 +586,7 @@ class App extends Component {
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
+              <ol className="breadcrumb mb-0">
                 <li className=""><a href="#">Mobile Accessories: </a></li>
                 <li className="ms-2 breadcrumb-item"><a href="#">Mobile Covers</a></li>
                 <li className="breadcrumb-item" aria-current="page"><a href="#">Leather Mobile Covers</a></li>
@@ -574,7 +597,7 @@ class App extends Component {
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
+              <ol className="breadcrumb mb-0">
                 <li className=""><a href="#">Mobile Accessories: </a></li>
                 <li className="ms-2 breadcrumb-item"><a href="#">Mobile Covers</a></li>
                 <li className="breadcrumb-item" aria-current="page"><a href="#">Leather Mobile Covers</a></li>
@@ -585,7 +608,7 @@ class App extends Component {
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
+              <ol className="breadcrumb mb-0">
                 <li className=""><a href="#">Mobile Accessories: </a></li>
                 <li className="ms-2 breadcrumb-item"><a href="#">Mobile Covers</a></li>
                 <li className="breadcrumb-item" aria-current="page"><a href="#">Leather Mobile Covers</a></li>
@@ -596,7 +619,7 @@ class App extends Component {
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
+              <ol className="breadcrumb mb-0">
                 <li className=""><a href="#">Mobile Accessories: </a></li>
                 <li className="ms-2 breadcrumb-item"><a href="#">Mobile Covers</a></li>
                 <li className="breadcrumb-item" aria-current="page"><a href="#">Leather Mobile Covers</a></li>
@@ -607,7 +630,7 @@ class App extends Component {
               </ol>
             </nav>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
+              <ol className="breadcrumb mb-0">
                 <li className=""><a href="#">Mobile Accessories: </a></li>
                 <li className="ms-2 breadcrumb-item"><a href="#">Mobile Covers</a></li>
                 <li className="breadcrumb-item" aria-current="page"><a href="#">Leather Mobile Covers</a></li>
