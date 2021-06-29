@@ -1,3 +1,4 @@
+/*************************** Home Css Start *******************************/
 .tbdr{
   border:1px dashed #000;
   height: 100% !important;
@@ -8,6 +9,7 @@ a:focus {
 body{
   font-family: 'RobotoRegular', sans-serif;
   font-size: 0.8em;
+  background: #f7f7f7;
 }
 #carouselExampleIndicators{
   height: 96% !important;
@@ -347,3 +349,28 @@ footer{
   }
 
 }
+/*************************** Home Css End *******************************/
+
+/*************************** Detail Css Start *******************************/
+.a_dtl_main{
+  max-width: 1245px !important;
+}
+.a_dtl_top_brdcrmb{
+  height: 40px;
+}
+.a_dtl_prodCont{
+  height: 680px !important;
+  background: red;
+}
+.a_dtl_prodDetBox{
+  height: 2700px;
+}
+.a_dtl_googLeaddSenseBox{
+  height: 275px !important;
+}
+.a_dtl_prodDetBoxBottom{
+  height: 2500px;
+}
+
+/*************************** Detail Css End *******************************/
+
