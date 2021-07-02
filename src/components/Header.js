@@ -24,10 +24,10 @@ class Header extends Component {
   //3. Method
   handleScroll = () => {
     console.log('ok ' + window.scrollY);
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 30) {
       //Add
       //position-fixed top-0 start-0 
-      this.setState({ x: 'position-fixed top-0 start-0' });
+      this.setState({ x: 'moveup position-fixed w-100' });
     } else {
       //Remove
       this.setState({ x: '' });
@@ -126,7 +126,7 @@ class Header extends Component {
                         </div>
                     </div>
                 </div>
-                <header>
+                <header className={' '+this.state.x}>
                     <div className="a_header_top">
                         <div className="container p-0">
                             <span className="text-white">India's Fastest Online Shopping Destination</span>
@@ -146,7 +146,7 @@ class Header extends Component {
                             </ul>
                         </div>
                     </div>
-                    <div className={'a_header_bottom w-100 ' + this.state.x}>
+                    <div className="a_header_bottom w-100">
                         <div className="container">
                             <div className="row">
                                 <div className="col-2">

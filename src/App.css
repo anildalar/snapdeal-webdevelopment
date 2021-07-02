@@ -45,10 +45,25 @@ header{
   height: 94px;
   background-color: #e40046;
   border: 1px dashed red;
+  transition: all linear 0.2s;
+  z-index: 100000;
+}
+.moveup{
+  transform: translateY(-30px);
 }
 .aside{
   z-index: 1000;
   top:50px;
+}
+#carouselExampleIndicators .carousel-control-next:hover,#carouselExampleIndicators .carousel-control-prev:hover{
+  background: #000;   
+}
+#carouselExampleIndicators .carousel-control-next,#carouselExampleIndicators .carousel-control-prev{
+  height: 16% !important;
+  width: 7% !important; 
+  border-radius: 300px !important;
+  background: #fff;
+  margin-top: 124px;
 }
 .asidenav > li:hover > a{
   background: #fafafa;
@@ -248,10 +263,21 @@ footer{
 }
 .a_fspritebox{
   width: 53px;
-  height: 53px;
-  border:1px dashed orange;
+  height: 52px;
   background-image: url('https://i1.sdlcdn.com/img/newHomePageIcons@1x.png');
   background-position: -5px -63px;
+}
+.a_trustpay{
+  width: 45px;
+  height: 50px;
+  background-position: -59px -63px !important;
+}
+.a_helpCenter{
+  background-position: -106px -63px !important;
+}
+.a_shopOnGo{
+  width: 30px;
+  background-position: -162px -63px !important;
 }
 .footer_socialicon a{
   width: 30px;

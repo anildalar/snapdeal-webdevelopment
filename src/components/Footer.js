@@ -17,18 +17,32 @@ class Footer extends Component {
                     <div className="container-fluid bg-white a_foot1">
                         <div className="row ps-5 pe-5 border-top border-bottom" style={{ 'height': 200 + 'px' }}>
                             <div className="col-3 p-0 border-start border-end ">
-                                <a href="#" className="btn btn-danger w-100 h-100 rounded-0">
-                                    <div className="a_fspritebox"></div>
+                                <a href="#" target="_blank" className="btn w-100 h-100 rounded-0">
+                                    <div className="a_fspritebox mx-auto mt-3"></div>
+                                    <h5 className="text-dark mt-3 mb-3">100% SECURE PAYMENTS</h5>
+                                    <p>Moving your card details to a much more secured place</p>
                                 </a>
                             </div>
                             <div className="col-3 p-0 border-start border-end">
-                                <a href="#" className="btn btn-danger w-100 h-100 rounded-0">A</a>
+                                <a href="#" target="_blank" className="btn w-100 h-100 rounded-0">
+                                    <div className="a_fspritebox a_trustpay mx-auto mt-3"></div>
+                                    <h5 className="text-dark mt-3 mb-3">TrustPay</h5>
+                                    <p>100% Payment Protection. Easy Return Policy </p>
+                                </a>
                             </div>
                             <div className="col-3 p-0 border-start border-end">
-                                <a href="#" className="btn btn-danger w-100 h-100 rounded-0">A</a>
+                                <a href="#" target="_blank" className="btn w-100 h-100 rounded-0">
+                                    <div className="a_fspritebox a_helpCenter mx-auto mt-3"></div>
+                                    <h5 className="text-dark mt-3 mb-3">Help Center</h5>
+                                    <p>Got a question? Look no further.Browse our FAQs or submit your query here.</p>
+                                </a>
                             </div>
                             <div className="col-3 p-0 border-start border-end">
-                                <a href="#" className="btn btn-danger w-100 h-100 rounded-0">A</a>
+                                <a href="#" target="_blank"  className="btn w-100 h-100 rounded-0">
+                                    <div className="a_fspritebox a_shopOnGo  mx-auto mt-3"></div>
+                                    <h5 className="text-dark mt-3 mb-3">Shop on the Go</h5>
+                                    <p>Download the app and get exciting app only offers at your fingertips</p>
+                                </a>
                             </div>
                         </div>
                         <div className="container a_foot1_cont2">
