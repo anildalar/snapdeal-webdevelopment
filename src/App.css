@@ -217,6 +217,7 @@ header{
 .a_main{
   background-color: #f7f7f7;
   border:1px dashed green;
+  margin-top: 94px;
 }
 .a_main1{
   border:1px dashed #000;

@@ -11,7 +11,7 @@ var i = 0;
 class Header extends Component {
     //1. Properties
   state = {
-    x: '',
+    ty: 0,
     y: '',
     z: 'd-none',
     slideRbox:{
@@ -24,13 +24,13 @@ class Header extends Component {
   //3. Method
   handleScroll = () => {
     console.log('ok ' + window.scrollY);
-    if (window.scrollY >= 30) {
+    if (window.scrollY > 0) {
       //Add
       //position-fixed top-0 start-0 
-      this.setState({ x: 'moveup position-fixed w-100' });
+      this.setState({ ty: -30 });
     } else {
       //Remove
-      this.setState({ x: '' });
+      this.setState({ ty: 0 });
     }
     if (window.scrollY >= 787) {
       this.setState({ y: 'position-fixed aside d-none' });
@@ -126,7 +126,7 @@ class Header extends Component {
                         </div>
                     </div>
                 </div>
-                <header className={' '+this.state.x}>
+                <header className={'position-fixed w-100 top-0 start-0'} style={{transform:'translateY('+this.state.ty+'px)'}}>
                     <div className="a_header_top">
                         <div className="container p-0">
                             <span className="text-white">India's Fastest Online Shopping Destination</span>
