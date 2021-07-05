@@ -151,10 +151,30 @@ class Home extends Component {
                                     </div>
                                 </div>
                                 <div className="a_trending_products"></div>
+                                
+                            </div>
+                            
+                        </div>
+                       
+                    </div>
+                    <div className="text-center p-3">
+                        <button className="btn btn-dark w-25">Load More</button>
+                    </div>
+                    
+                    <div className="container-fluid a_main2">
+                        <div className="row m-0 h-100 bg-white">
+                            <div className="col-6 p-0 dld_banner"></div>
+                            <div className="col-4 pt-5">
+                                <h1 className="mt-5">Download Snapdeal App Now</h1>
+                                <p className="text-secondary fs-4">Fast, Simple &amp; Delightful.All it takes is 30 seconds to Download.</p>
+                                <button className="btn dwnlodBtn apple me-3" style={{width:'125px',height:'42px'}}>A</button>
+                                <button className="btn dwnlodBtn google" style={{width:'125px',height:'42px'}}>B</button>
+                            </div>
+                            <div className="col-2 dld_banner_right">
+                                
                             </div>
                         </div>
                     </div>
-                    <div className="container-fluid a_main2"></div>
                 </div>
             </Layout>
         )

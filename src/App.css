@@ -252,7 +252,6 @@ header{
   height: 299px !important;
 }
 .a_main2{
-  border:1px dashed red;
   height: 455px;
 }
 footer a{
@@ -375,6 +374,25 @@ footer{
       transform:scale(1)
   }
 
+}
+.dld_banner{
+  background-image: url('https://i1.sdlcdn.com/img/appScreenshot@1x.png');
+  background-repeat: no-repeat ;
+  background-position: center top;
+}
+.dld_banner_right{
+  background-image: url('https://i1.sdlcdn.com/img/leaves1x.png');
+  background-repeat: no-repeat;
+  background-position:right top;
+}
+.dwnlodBtn{
+  background-image: url('https://i1.sdlcdn.com/img/newHomePageIcons@1x.png');
+}
+.apple{
+  background-position:-4px 86px;
+}
+.google{
+  background-position:-4px 45px !important;
 }
 /*************************** Home Css End *******************************/
 
