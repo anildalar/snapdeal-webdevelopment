@@ -399,6 +399,7 @@ footer{
 /*************************** Detail Css Start *******************************/
 .a_dtl_main{
   max-width: 1245px !important;
+  margin-top: 92px;
 }
 .a_dtl_top_brdcrmb{
   height: 40px;
