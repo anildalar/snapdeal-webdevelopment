@@ -394,6 +394,16 @@ footer{
 .google{
   background-position:-4px 45px !important;
 }
+.carousel_trending a{
+  position: relative;
+  z-index: 10000;
+  padding:20px !important;
+}
+.carousel_trending a:hover{
+  /* XYBSC */
+  box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.2);
+  
+}
 /*************************** Home Css End *******************************/
 
 /*************************** Detail Css Start *******************************/
