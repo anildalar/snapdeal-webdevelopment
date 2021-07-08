@@ -1,15 +1,40 @@
+//Import Area
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faArrowCircleUp, faArrowUp, faHeart } from '@fortawesome/free-solid-svg-icons'
 
 /**
 * @author
 * @class Footer
 **/
 
+//Class/Function Area
 class Footer extends Component {
-    state = {}
+    //1. Property
+    state = {
+        a_faArrowCircleUp_prpty:'d-none'
+    }
+
+    //2. Constructor
+
+
+    //3. Method
+    //Life Cycle Method
+    componentDidMount(){
+        window.addEventListener('scroll',this.scroll_cbfn); /** this.member */
+    }
+    scroll_cbfn = ()=>{
+        console.log('Amount '+window.scrollY);
+        if(window.scrollY > 5000 ){
+            //d-block
+            this.setState({ a_faArrowCircleUp_prpty:'d-block'});
+        }else{
+            //d-none
+            this.setState({ a_faArrowCircleUp_prpty:'d-none'});
+        }
+    }
+
     render() {
         return (
             <>
@@ -297,6 +322,10 @@ class Footer extends Component {
                         </div>
                     </div>
                 </footer>
+                <a href="#" className={'btn btn-dark a_faArrowCircleUp position-fixed '+this.state.a_faArrowCircleUp_prpty}>
+                    <FontAwesomeIcon className="a_arrowUp" icon={faArrowUp} />
+                </a>
+                
             </>
         )
     }

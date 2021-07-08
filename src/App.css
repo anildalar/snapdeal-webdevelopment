@@ -404,6 +404,24 @@ footer{
   box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.2);
   
 }
+.a_faArrowCircleUp:hover{
+  opacity: 0.9;
+}
+.a_faArrowCircleUp{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 3.5em;
+  bottom:50px;
+  right:34px;
+  opacity: 0.5;
+}
+.a_faArrowCircleUp .a_arrowUp{
+  position: relative;
+  left:-3px;
+  bottom: 16px;
+  font-size: 0.8em;
+}
 /*************************** Home Css End *******************************/
 
 /*************************** Detail Css Start *******************************/
