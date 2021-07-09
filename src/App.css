@@ -182,7 +182,20 @@ header{
   background: #333;
   z-index: 1000;
   border-top-left-radius:4px ;
-  display: none;
+  display: block;
+}
+.a_signin_ul{
+  padding-top:15px;
+}
+.a_signin_ul a:hover{
+  background: #2e2e2e;
+  color:#fff;
+}
+.a_signin_ul a{
+  height:33px;
+  line-height: 33px;
+  color:#fff;
+  padding-left: 19px !important;
 }
 .a_bl{
   margin-top:11px;
@@ -422,6 +435,7 @@ footer{
   bottom: 16px;
   font-size: 0.8em;
 }
+
 /*************************** Home Css End *******************************/
 
 /*************************** Detail Css Start *******************************/

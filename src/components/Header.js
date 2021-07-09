@@ -10,72 +10,72 @@ import { faBars, faChartLine, faMobileAlt, faSearch, faShieldAlt, faShoppingCart
 var i = 0;
 class Header extends Component {
     //1. Properties
-  state = {
-    ty: 0,
-    y: '',
-    z: 'd-none',
-    slideRbox:{
-      rot:0,
-      opact:1
+    state = {
+        ty: 0,
+        y: '',
+        z: 'd-none',
+        slideRbox: {
+            rot: 0,
+            opact: 1
+        }
     }
-  }
-  //2. Constructor
+    //2. Constructor
 
-  //3. Method
-  handleScroll = () => {
-    console.log('ok ' + window.scrollY);
-    if (window.scrollY > 0) {
-      //Add
-      //position-fixed top-0 start-0 
-      this.setState({ ty: -30 });
-    } else {
-      //Remove
-      this.setState({ ty: 0 });
-    }
-    if (window.scrollY >= 787) {
-      this.setState({ y: 'position-fixed aside d-none' });
-      this.setState({ z: 'd-block' });
-    } else {
-      this.setState({ z: 'd-none' });
+    //3. Method
+    handleScroll = () => {
+        console.log('ok ' + window.scrollY);
+        if (window.scrollY > 0) {
+            //Add
+            //position-fixed top-0 start-0 
+            this.setState({ ty: -30 });
+        } else {
+            //Remove
+            this.setState({ ty: 0 });
+        }
+        if (window.scrollY >= 787) {
+            this.setState({ y: 'position-fixed aside d-none' });
+            this.setState({ z: 'd-block' });
+        } else {
+            this.setState({ z: 'd-none' });
 
+        }
     }
-  }
-  asideNavShow = () => {
-    this.setState({ y: 'position-fixed aside d-block' });
-  }
-  componentDidMount() {
-    //THis method method will be called when page/component is loaded
-    //object.method();
-    window.addEventListener('scroll', this.handleScroll);
-  }
-  a_sliderrbox = (e) => {
-    console.log('clicked');
-    e.preventDefault();
-    console.log(i);
-    let curElem = e.currentTarget.closest('.a_sliderrbox');
-    curElem.style.zIndex='1000';
-    curElem.style.opacity=0;
-    curElem.style.visibilty='hidden';
-    curElem.style.transform='rotateZ(45deg)';
-    console.log(curElem);
-    
-    if(i%2 === 0){
-      console.log('prev');
-      curElem.previousElementSibling.style.zIndex = '1010';
-      curElem.style.opacity=1;
-      curElem.style.transform='rotateZ(0deg)';
-      i++;
-    }else{
-      console.log('next');
-      curElem.nextElementSibling.style.zIndex = '1010';
-      curElem.style.opacity=1;
-      curElem.style.transform='rotateZ(0deg)';
-      i--;
+    asideNavShow = () => {
+        this.setState({ y: 'position-fixed aside d-block' });
     }
-    //this.setState({slideRbox:{rot:45,opact:0}});
+    componentDidMount() {
+        //THis method method will be called when page/component is loaded
+        //object.method();
+        window.addEventListener('scroll', this.handleScroll);
+    }
+    a_sliderrbox = (e) => {
+        console.log('clicked');
+        e.preventDefault();
+        console.log(i);
+        let curElem = e.currentTarget.closest('.a_sliderrbox');
+        curElem.style.zIndex = '1000';
+        curElem.style.opacity = 0;
+        curElem.style.visibilty = 'hidden';
+        curElem.style.transform = 'rotateZ(45deg)';
+        console.log(curElem);
 
-    //style={{ transform:'rotateZ('+this.state.slideRbox.rot+'deg)',opacity:this.state.slideRbox.opact }}
-  }
+        if (i % 2 === 0) {
+            console.log('prev');
+            curElem.previousElementSibling.style.zIndex = '1010';
+            curElem.style.opacity = 1;
+            curElem.style.transform = 'rotateZ(0deg)';
+            i++;
+        } else {
+            console.log('next');
+            curElem.nextElementSibling.style.zIndex = '1010';
+            curElem.style.opacity = 1;
+            curElem.style.transform = 'rotateZ(0deg)';
+            i--;
+        }
+        //this.setState({slideRbox:{rot:45,opact:0}});
+
+        //style={{ transform:'rotateZ('+this.state.slideRbox.rot+'deg)',opacity:this.state.slideRbox.opact }}
+    }
     render() {
         return (
             <React.Fragment>
@@ -126,7 +126,7 @@ class Header extends Component {
                         </div>
                     </div>
                 </div>
-                <header className={'position-fixed w-100 top-0 start-0'} style={{transform:'translateY('+this.state.ty+'px)'}}>
+                <header className={'position-fixed w-100 top-0 start-0'} style={{ transform: 'translateY(' + this.state.ty + 'px)' }}>
                     <div className="a_header_top">
                         <div className="container p-0">
                             <span className="text-white">India's Fastest Online Shopping Destination</span>
@@ -208,20 +208,27 @@ class Header extends Component {
                                             <a className="pt-3 pb-3 text-white a_bl rounded-top" href="#">Sign in
                                                 <span className="fauserbox"><FontAwesomeIcon className="fs-5" icon={faUser} /></span>
                                             </a>
-                                            <ul className="nav rounded-bottom">
-                                                <li className="nav-item">
-                                                    <a className="nav-link active" aria-current="page" href="#">Active</a>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <a className="nav-link" href="#">Link</a>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <a className="nav-link" href="#">Link</a>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <a className="nav-link disabled" href="#">Disabled</a>
-                                                </li>
-                                            </ul>
+                                            <div className="a_signin_ul  rounded-bottom border-bottom">
+                                                
+                                                <ul className="nav d-block">
+                                                    <li className="nav-item">
+                                                        <a className="nav-link p-0" href="#"> <FontAwesomeIcon className="me-2" icon={faUser} /> Your Account</a>
+                                                    </li>
+                                                    <li className="nav-item">
+                                                        <a className="nav-link p-0" href="#"><FontAwesomeIcon className="me-2" icon={faUser} /> Your Orders</a>
+                                                    </li>
+                                                    <li className="nav-item">
+                                                        <a className="nav-link p-0" href="#"> <FontAwesomeIcon className="me-2" icon={faUser} /> Shortlist</a>
+                                                    </li>
+                                                    <li className="nav-item">
+                                                        <a className="nav-link p-0" href="#"> <FontAwesomeIcon className="me-2" icon={faUser} /> SD Cash</a>
+                                                    </li>
+                                                </ul>
+                                                <div className="border-top">
+                                                    <button className="btn btn-danger">Login</button>
+                                                </div>
+                                            </div>
+
                                         </li>
                                     </ul>
                                 </div>
