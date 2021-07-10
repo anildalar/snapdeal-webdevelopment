@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faChartLine, faMobileAlt, faSearch, faShieldAlt, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faChartLine, faCity, faHeart, faMobileAlt, faMoneyBill, faSearch, faShieldAlt, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons'
 
 /**
 * @author
@@ -209,23 +209,24 @@ class Header extends Component {
                                                 <span className="fauserbox"><FontAwesomeIcon className="fs-5" icon={faUser} /></span>
                                             </a>
                                             <div className="a_signin_ul  rounded-bottom border-bottom">
-                                                
                                                 <ul className="nav d-block">
                                                     <li className="nav-item">
                                                         <a className="nav-link p-0" href="#"> <FontAwesomeIcon className="me-2" icon={faUser} /> Your Account</a>
                                                     </li>
                                                     <li className="nav-item">
-                                                        <a className="nav-link p-0" href="#"><FontAwesomeIcon className="me-2" icon={faUser} /> Your Orders</a>
+                                                        <a className="nav-link p-0" href="#"><FontAwesomeIcon className="me-2" icon={faHeart} /> Your Orders</a>
                                                     </li>
                                                     <li className="nav-item">
-                                                        <a className="nav-link p-0" href="#"> <FontAwesomeIcon className="me-2" icon={faUser} /> Shortlist</a>
+                                                        <a className="nav-link p-0" href="#"> <FontAwesomeIcon className="me-2" icon={faHeart} /> Shortlist</a>
                                                     </li>
                                                     <li className="nav-item">
-                                                        <a className="nav-link p-0" href="#"> <FontAwesomeIcon className="me-2" icon={faUser} /> SD Cash</a>
+                                                        <a className="nav-link p-0" href="#"> <FontAwesomeIcon className="me-2" icon={faMoneyBill} /> SD Cash</a>
                                                     </li>
                                                 </ul>
-                                                <div className="border-top">
-                                                    <button className="btn btn-danger">Login</button>
+                                                <div className="mt-3 p-3 text-center" style={{ borderTop:'1px solid #4d4d4d' }}>
+                                                    <p className="text-secondary m-0">If you are a new user</p>
+                                                    <a href="#" className="p-0 text-white text-decoration-none">Register</a>
+                                                    <button className="btn btn-danger rounded-1 w-100 mt-1">Login</button>
                                                 </div>
                                             </div>
 

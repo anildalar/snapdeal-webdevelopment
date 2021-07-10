@@ -170,10 +170,10 @@ header{
   background: rgba(0,0,0,0.1);
   border-radius: 40px;
 }
-.a_hbot_nav > li:hover ul{
+.a_hbot_nav > li:hover > div{
   display: block;
 }
-.a_hbot_nav > li ul{
+.a_signin_ul{
   position: absolute;
   top:62px;
   right:0px;
@@ -182,16 +182,17 @@ header{
   background: #333;
   z-index: 1000;
   border-top-left-radius:4px ;
-  display: block;
+  display: none;
 }
 .a_signin_ul{
   padding-top:15px;
 }
-.a_signin_ul a:hover{
+.a_signin_ul > ul > li > a:hover{
   background: #2e2e2e;
   color:#fff;
 }
-.a_signin_ul a{
+.a_signin_ul > ul > li > a{
+  display: block;
   height:33px;
   line-height: 33px;
   color:#fff;
