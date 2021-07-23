@@ -66,19 +66,35 @@ class Home extends Component {
                                         <div className="position-absolute top-0 asidenav_righbox">A</div>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">Men's Fasion</a>
+                                        <a className="nav-link" href="#">Women's Fasion</a>
                                         <div className="position-absolute top-0 asidenav_righbox">B</div>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">Men's Fasion</a>
+                                        <a className="nav-link" href="#">Toys,Kids Fasion &amp; more </a>
                                         <div className="position-absolute top-0 asidenav_righbox">C</div>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">Men's Fasion</a>
+                                        <a className="nav-link" href="#">Beauty,Health &amp; Daily Needs</a>
+                                        <div className="position-absolute top-0 asidenav_righbox">D</div>
+
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">Men's Fasion</a>
+                                        <a className="nav-link" href="#">Sports,Fitness &amp; Outdoor</a>
+                                        <div className="position-absolute top-0 asidenav_righbox">E</div>
                                     </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="#">Car &amp; Motorbike</a>
+                                        <div className="position-absolute top-0 asidenav_righbox">F</div>
+
+                                    </li> <li className="nav-item">
+                                        <a className="nav-link" href="#">Hobbies</a>
+                                        <div className="position-absolute top-0 asidenav_righbox">G</div>
+
+                                    </li> <li className="nav-item">
+                                        <a className="nav-link" href="#">Book,Media &amp; Music</a>
+                                        <div className="position-absolute top-0 asidenav_righbox">H</div>
+
+                                    </li> 
                                 </ul>
                             </div>
                             <div className="col-10">
