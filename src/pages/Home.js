@@ -45,18 +45,18 @@ class Home extends Component {
                                         </div>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#"><img className="me-1" width="25" src="https://n3.sdlcdn.com/imgs/d/h/3/Discount_Right_icon-f5105.png" />Modile &amp; Tables</a>
+                                        <a className="nav-link" href="#"><img className="me-1" width="25" src="https://i1.sdlcdn.com/img/leftnavicon09/30x30mobile2.png" />Modile &amp; Tables</a>
                                         <div className="position-absolute top-0 asidenav_righbox">B</div>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#"><img className="me-1" width="25" src="https://n3.sdlcdn.com/imgs/d/h/3/Discount_Right_icon-f5105.png" />Electronics</a>
+                                        <a className="nav-link" href="#"><img className="me-1" width="25" src="https://n2.sdlcdn.com/imgs/d/2/c/Electronic-6212c.png" />Electronics</a>
                                         <div className="position-absolute top-0 asidenav_righbox">C</div>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#"><img className="me-1" width="25" src="https://n3.sdlcdn.com/imgs/d/h/3/Discount_Right_icon-f5105.png" />Computer &amp; Gaming</a>
+                                        <a className="nav-link" href="#"><img className="me-1" width="25" src="	https://n2.sdlcdn.com/imgs/d/2/c/ComputerGaming-a02cf.png" />Computer &amp; Gaming</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#"><img className="me-1" width="25" src="https://n3.sdlcdn.com/imgs/d/h/3/Discount_Right_icon-f5105.png" />Home &amp; Kitchen</a>
+                                        <a className="nav-link" href="#"><img className="me-1" width="25" src="	https://n2.sdlcdn.com/imgs/c/0/x/Homekitchenfurnishing-3eda1.jpg" />Home &amp; Kitchen</a>
                                     </li>
                                 </ul>
                                 <h6 className="fs-6">MORE CATEGORIES</h6>
