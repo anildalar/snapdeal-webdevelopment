@@ -90,58 +90,61 @@ class Footer extends Component {
                                     </ul>
                                 </div>
                                 <div className="col-2 tbdr pt-5">
-                                    <h6 className="text-dark">POLICY INFO</h6>
+                                    <h6 className="text-dark">COMPANY</h6>
                                     <ul className="nav flex-column">
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Privacy Policy</a>
+                                            <a className="nav-link" href="#">About Us</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Terms of Sale</a>
+                                            <a className="nav-link" href="#">Core Valuese</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Terms of Use</a>
+                                            <a className="nav-link" href="#">Careers</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Report Abuse &amp; Takedown Policy</a>
+                                            <a className="nav-link" href="#">Blog</a>
+                                        </li>
+                                        <li className="nav-item">
+                                            <a className="nav-link" href="#">Sitemap</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="col-2 tbdr pt-5">
-                                    <h6 className="text-dark">POLICY INFO</h6>
+                                    <h6 className="text-dark">SNAPDEAL BUSINESS</h6>
                                     <ul className="nav flex-column">
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Privacy Policy</a>
+                                            <a className="nav-link" href="#">Shopping App</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Terms of Sale</a>
+                                            <a className="nav-link" href="#">Sell on Snapdeal</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Terms of Use</a>
+                                            <a className="nav-link" href="#">Advertise on Snapdeal</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Report Abuse &amp; Takedown Policy</a>
+                                            <a className="nav-link" href="#">Media Enquiries</a>
+                                        </li>
+                                        <li className="nav-item">
+                                            <a className="nav-link" href="#">Be an Affiliate</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="col-2 tbdr pt-5">
-                                    <h6 className="text-dark">POLICY INFO</h6>
+                                    <h6 className="text-dark">NEED HELP ?</h6>
                                     <ul className="nav flex-column">
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Privacy Policy</a>
+                                            <a className="nav-link" href="#">FAQ</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Terms of Sale</a>
+                                            <a className="nav-link" href="#">Contact Us</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Terms of Use</a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a className="nav-link" href="#">Report Abuse &amp; Takedown Policy</a>
+                                            <a className="nav-link" href="#">Online Shopping</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="col-4 tbdr pt-5">
-                                    <h6 className="text-dark">POLICY INFO</h6>
+                                    <h6 className="text-dark">SUBSCRIBE</h6>
                                     <form>
                                         <div className="row g-3">
                                             <div className="col p-0">
