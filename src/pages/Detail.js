@@ -20,8 +20,9 @@ class Detail extends Component {
                         <nav aria-label="breadcrumb">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><a href="#">Home</a></li>
-                                <li className="breadcrumb-item"><a href="#">Fashion Accessories </a></li>
-                                <li className="breadcrumb-item active" aria-current="page">Men's Accessories </li>
+                                <li className="breadcrumb-item"><a href="#">Watches </a></li>
+                                <li className="breadcrumb-item"><a href="#">Men's Watches </a></li>
+                                <li className="breadcrumb-item"><a href="#">HMTI 8056 Metal Analog Men's Watch </a></li>
                             </ol>
                         </nav>
                     </div>
